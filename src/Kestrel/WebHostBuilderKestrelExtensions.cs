@@ -70,7 +70,7 @@ namespace Microsoft.AspNetCore.Hosting
         {
             if (configureOptions == null)
             {
-                throw new ArgumentNullException(nameof(configureOptions));
+                throw  new ArgumentNullException(nameof(configureOptions));
             }
 
             return hostBuilder.UseKestrel().ConfigureServices((context, services) =>
